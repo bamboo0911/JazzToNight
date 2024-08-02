@@ -214,3 +214,43 @@ body {
     font-size: 1rem;
     margin: 0.5rem 0;
 }
+
+
+
+/* Musician Detail Styles */
+.musician-detail {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.musician-detail img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.musician-detail h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.musician-detail p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.musician-detail h3 {
+    font-size: 1.5rem;
+    margin: 1.5rem 0 1rem;
+}
+
+.musician-detail ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.musician-detail ul li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
