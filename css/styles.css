@@ -100,3 +100,38 @@ body {
     text-align: center;
     margin-bottom: 1rem;
 }
+
+
+/* Venues List Styles */
+.venues-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.venue {
+    width: 30%;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.venue img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.venue h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.venue p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
