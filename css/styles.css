@@ -1,0 +1,39 @@
+/* Reset CSS */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem;
+}
+
+.navbar h1 {
+    color: #fff;
+}
+
+.navbar nav {
+    display: flex;
+}
+
+.navbar nav a {
+    color: #fff;
+    padding: 0 1rem;
+    text-transform: uppercase;
+}
+
+.navbar nav a:hover {
+    background-color: #555;
+}
