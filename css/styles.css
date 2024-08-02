@@ -254,3 +254,65 @@ body {
     font-size: 1rem;
     margin-bottom: 0.5rem;
 }
+
+
+/* Articles List Styles */
+.articles-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* 确保相邻文章之间的间距合适 */
+    padding: 2rem;
+}
+
+.article {
+    width: calc(50% - 1rem); /* 确保两篇文章并排时占据整个宽度，并留出间隙 */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.article img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.article-info {
+    padding: 1rem;
+    background-color: #fff; /* 添加背景颜色以确保文字可见 */
+}
+
+.article-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.article-info p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.article-info .date {
+    color: gray;
+    font-size: 0.9rem;
+}
+
+.article-info a {
+    color: #007BFF;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+.article-info a:hover {
+    text-decoration: underline;
+}
+
+/* Adjusting aspect ratio for articles */
+.article {
+    height: auto;
+}
