@@ -20,4 +20,79 @@ img {
     object-fit: cover;
     object-position: center;
   }
-  
+
+
+/* Variables */
+:root {
+  --primary-dark: #2C2C2E; /* 深灰色 */
+  --accent-bronze: #B8860B; /* 古老金屬色 */
+  --secondary-light: #F9F9F9;
+  --text-primary: #FFFFFF;
+  --text-secondary: #B3B3B3;
+  --font-primary: 'Roboto', sans-serif;
+}
+
+/* General Styles */
+body {
+  font-family: var(--font-primary);
+  color: var(--text-primary);
+  background-color: var(--primary-dark);
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--accent-bronze);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-dark);
+  padding: 1rem;
+}
+
+.navbar h1 {
+  color: var(--accent-bronze);
+}
+
+.navbar nav a {
+  color: var(--text-primary);
+  padding: 0 1rem;
+  text-transform: uppercase;
+}
+
+.navbar nav a:hover {
+  color: var(--accent-bronze);
+}
+
+/* Footer Styles */
+.footer {
+  background-color: var(--primary-dark);
+  color: var(--text-secondary);
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
