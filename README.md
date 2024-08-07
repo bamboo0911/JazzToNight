@@ -1,3 +1,18 @@
+## 建議圖片尺寸
+
+### 寬屏卡片 (例如：Carousel)
+- **寬度**：1200 像素
+- **高度**：600 像素
+
+### 普通卡片 (例如：VenueCard, MusicianCard, ArticleCard)
+- **寬度**：800 像素
+- **高度**：600 像素
+
+### 縱向卡片
+- **寬度**：600 像素
+- **高度**：800 像素
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +83,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+

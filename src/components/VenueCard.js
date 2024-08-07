@@ -3,15 +3,17 @@ import { Link } from 'react-router-dom';
 
 function VenueCard({ image, name, address, description }) {
   return (
-    <div className="venue-card bg-white p-4 m-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-      <img className="rounded-t-lg w-full h-48 object-cover" src={image} alt={name} />
-      <div className="p-4">
-        <h3 className="text-xl font-bold mb-2">{name}</h3>
-        <p className="text-gray-700 mb-2">{address}</p>
-        <p className="text-gray-600 mb-4">{description}</p>
-        <Link className="text-accent hover:underline" to={`/venues/${name}`}>查看詳情</Link>
+    <Link to={`/venues/${name}`} className="block bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl m-4 border border-gray-200">
+      <div className="relative">
+        <img className="w-full h-60 object-cover" src={`/images/${image}`} alt={name} />
+        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-70"></div>
       </div>
-    </div>
+      <div className="p-6">
+        <h3 className="text-3xl font-semibold mb-2 text-gray-900 dark:text-gray-100">{name}</h3>
+        <p className="text-gray-700 dark:text-gray-400 mb-4">{address}</p>
+        <p className="text-gray-600 dark:text-gray-300 mb-6">{description}</p>
+      </div>
+    </Link>
   );
 }
 
