@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* 自訂全局樣式 */
+body {
+  @apply bg-background text-textPrimary font-sans;
+}
+
+a {
+  @apply text-accent;
+}
+
+a:hover {
+  @apply underline;
+}
