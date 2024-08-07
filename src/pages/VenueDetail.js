@@ -38,21 +38,21 @@ function VenueDetail() {
   }
 
   return (
-    <div className="venue-detail">
-      <h1>{venue.name}</h1>
-      <img src={venue.image} alt={venue.name} />
-      <p>{venue.address}</p>
-      <p>{venue.description}</p>
-      <h3>未來活動</h3>
-      <ul>
+    <div className="venue-detail p-4">
+      <h1 className="text-4xl font-bold mb-4 text-center text-accent">{venue.name}</h1>
+      <img className="w-full h-96 object-cover rounded-lg mb-4" src={venue.image} alt={venue.name} />
+      <p className="text-lg text-gray-700 mb-4">{venue.address}</p>
+      <p className="text-gray-600 mb-6">{venue.description}</p>
+      <h3 className="text-2xl font-semibold mb-2">未來活動</h3>
+      <ul className="list-disc list-inside mb-4">
         {venue.events.map((event, index) => (
-          <li key={index}>{event}</li>
+          <li key={index} className="text-gray-600">{event}</li>
         ))}
       </ul>
-      <h3>設施</h3>
-      <ul>
+      <h3 className="text-2xl font-semibold mb-2">設施</h3>
+      <ul className="list-disc list-inside">
         {venue.facilities.map((facility, index) => (
-          <li key={index}>{facility}</li>
+          <li key={index} className="text-gray-600">{facility}</li>
         ))}
       </ul>
     </div>

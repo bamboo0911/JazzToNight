@@ -38,21 +38,21 @@ function MusicianDetail() {
   }
 
   return (
-    <div className="musician-detail">
-      <h1>{musician.name}</h1>
-      <img src={musician.image} alt={musician.name} />
-      <p>{musician.instrument}</p>
-      <p>{musician.description}</p>
-      <h3>演出歷史</h3>
-      <ul>
+    <div className="musician-detail p-4">
+      <h1 className="text-4xl font-bold mb-4 text-center text-accent">{musician.name}</h1>
+      <img className="w-full h-96 object-cover rounded-lg mb-4" src={musician.image} alt={musician.name} />
+      <p className="text-lg text-gray-700 mb-4">{musician.instrument}</p>
+      <p className="text-gray-600 mb-6">{musician.description}</p>
+      <h3 className="text-2xl font-semibold mb-2">演出歷史</h3>
+      <ul className="list-disc list-inside mb-4">
         {musician.performances.map((performance, index) => (
-          <li key={index}>{performance}</li>
+          <li key={index} className="text-gray-600">{performance}</li>
         ))}
       </ul>
-      <h3>專輯</h3>
-      <ul>
+      <h3 className="text-2xl font-semibold mb-2">專輯</h3>
+      <ul className="list-disc list-inside">
         {musician.albums.map((album, index) => (
-          <li key={index}>{album}</li>
+          <li key={index} className="text-gray-600">{album}</li>
         ))}
       </ul>
     </div>

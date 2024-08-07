@@ -25,9 +25,9 @@ const musicians = [
 
 function Musicians() {
   return (
-    <div className="musicians">
-      <h1>樂手列表</h1>
-      <div className="musicians-list">
+    <div className="musicians p-4">
+      <h1 className="text-3xl font-bold mb-6 text-center text-accent">樂手列表</h1>
+      <div className="musicians-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {musicians.map((musician, index) => (
           <MusicianCard
             key={index}

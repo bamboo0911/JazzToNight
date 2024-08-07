@@ -25,9 +25,9 @@ const venues = [
 
 function Venues() {
   return (
-    <div className="venues">
-      <h1>展演場所</h1>
-      <div className="venues-list">
+    <div className="venues p-4">
+      <h1 className="text-3xl font-bold mb-6 text-center text-accent">展演場所</h1>
+      <div className="venues-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {venues.map((venue, index) => (
           <VenueCard
             key={index}

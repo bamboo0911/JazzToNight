@@ -25,14 +25,14 @@ function Carousel() {
           className={`absolute inset-0 transition-transform transform ${index === currentIndex ? 'translate-x-0' : 'translate-x-full'} w-full h-full bg-cover bg-center`}
           style={{ backgroundImage: `url(${image.src})` }}
         >
-          <div className="bg-black bg-opacity-50 text-white p-4">
-            <h3 className="text-2xl">{image.title}</h3>
+          <div className="bg-black bg-opacity-50 text-white p-4 flex flex-col justify-center items-center h-full">
+            <h3 className="text-3xl font-bold mb-2">{image.title}</h3>
             <p className="text-lg">{image.description}</p>
           </div>
         </div>
       ))}
-      <button className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2" onClick={prevSlide}>‹</button>
-      <button className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2" onClick={nextSlide}>›</button>
+      <button className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-primary bg-opacity-50 text-textPrimary p-2" onClick={prevSlide}>‹</button>
+      <button className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-primary bg-opacity-50 text-textPrimary p-2" onClick={nextSlide}>›</button>
     </div>
   );
 }
