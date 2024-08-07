@@ -3,13 +3,13 @@ import VenueCard from '../components/VenueCard';
 
 const venues = [
   {
-    image: '/path/to/venue1.jpg',
+    image: 'venue1.jpg',
     name: '場所 1',
     address: '地址 1',
     description: '這是場所 1 的簡介。',
   },
   {
-    image: '/path/to/venue2.jpg',
+    image: 'venue2.jpg',
     name: '場所 2',
     address: '地址 2',
     description: '這是場所 2 的簡介。',

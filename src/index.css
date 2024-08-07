@@ -14,3 +14,10 @@ a {
 a:hover {
   @apply underline;
 }
+
+/* 全局圖片樣式 */
+img {
+    object-fit: cover;
+    object-position: center;
+  }
+  
